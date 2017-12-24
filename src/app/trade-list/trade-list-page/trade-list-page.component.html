@@ -1,0 +1,98 @@
+<div fxLayout="row" fxLayoutAlign="start stretch">
+  <span class="breakout-col">Breakout</span>
+  <span class="setup-bars-col">Setup Bars</span>
+  <span class="exit-col">Exit</span>
+  <span class="summary-col">Trade Summary</span>
+</div>
+<div style="overflow-y: auto;padding-bottom:40px;" fxFlexFill>
+  <table class="table">
+    <tr *ngFor="let trade of trades" class="open-trade-row">
+      <td class="breakout-col">
+        <table>
+          <tr>
+            <td>Symbol:</td>
+            <td>
+              <strong>{{trade.symbol}}</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>Breakout Time:</td>
+            <td>{{moment(trade.breakOutTime).format('MM-DD hh:mm:ss A')}}</td>
+          </tr>
+          <tr>
+            <td>Breakout Price:</td>
+            <td>{{trade.breakOutPrice | currency:'USD':'symbol':'1.2-2'}}</td>
+          </tr>
+          <tr>
+            <td>Multiplier:</td>
+            <td>{{trade.multiplier}}</td>
+          </tr>
+        </table>
+      </td>
+      <td class="setup-bars-col">
+        <div fxLayout="row" fxLayoutAlign="start stretch">
+          <div *ngFor="let bar of trade.barInfo" style="margin-right: 1.5em;">
+            <table>
+              <tr>
+                <td>Intvl:</td>
+                <td>{{bar.intvl}}</td>
+              </tr>
+              <tr>
+                <td>High:</td>
+                <td>{{bar.high}}</td>
+              </tr>
+              <tr>
+                <td>Low:</td>
+                <td>{{bar.low}}</td>
+              </tr>
+              <tr>
+                <td>Open:</td>
+                <td>{{bar.open}}</td>
+              </tr>
+              <tr>
+                <td>Close:</td>
+                <td>{{bar.close}}</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td>{{moment(bar.date).format('hh:mm A')}}</td>
+              </tr>
+              <tr>
+                <td>&Pi;1-R/3:</td>
+                <td>{{Math.round(bar.setLvl*100000)/100000}}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </td>
+      <td class="exit-col">
+        <table>
+          <tr>
+            <td>Reason:</td>
+            <td>{{trade.closeReason}}</td>
+          </tr>
+          <tr>
+            <td>Exit Trigger Price:</td>
+            <td>{{trade.lastPrice | currency:'USD':'symbol':'1.2-2'}}</td>
+          </tr>
+          <tr>
+            <td>Exit Trigger Time:</td>
+            <td>{{moment(trade.lastDateTime).format('hh:mm:ss A')}}</td>
+          </tr>
+        </table>
+      </td>
+      <td class="summary-col">
+        <table>
+          <tr>
+            <td>Max Position Value:</td>
+            <td>{{trade.maxPosValue | currency:'USD':'symbol':'1.2-2'}}</td>
+          </tr>
+          <tr>
+            <td>Ending Position Value:</td>
+            <td>{{trade.endingPosValue | currency:'USD':'symbol':'1.2-2'}}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>

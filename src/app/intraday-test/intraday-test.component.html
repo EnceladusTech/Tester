@@ -1,0 +1,220 @@
+<h3>{{symbol}}</h3>
+<div style="overflow: auto;">
+  <table style="font-size: 0.75em" class="outer-table">
+    <tr>
+      <td>
+        <h4>30min</h4>
+      </td>
+      <td *ngFor="let bar of i30m">
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let bar of i30m">
+        <table class="bar-table">
+          <tr>
+            <td>Sample Date:</td>
+            <td>{{moment(bar.now).format('MM-DD hh:mm:ss A')}}</td>
+          </tr>
+          <tr>
+            <td>Bar Date:</td>
+            <td>{{moment(bar.date).format('MM-DD hh:mm:ss A')}}</td>
+          </tr>
+          <tr>
+            <td>Bar Time:</td>
+            <td>{{bar.time}}</td>
+          </tr>
+          <tr>
+            <td>Open:</td>
+            <td>{{bar.open}}</td>
+          </tr>
+          <tr>
+            <td>High:</td>
+            <td>{{bar.high}}</td>
+          </tr>
+          <tr>
+            <td>Low:</td>
+            <td>{{bar.low}}</td>
+          </tr>
+
+          <tr>
+            <td>Close:</td>
+            <td>{{bar.close}}</td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4>15min</h4>
+      </td>
+      <td *ngFor="let bar of i15m">
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let bar of i15m">
+        <table class="bar-table">
+          <tr>
+            <td>Sample Date:</td>
+            <td>{{moment(bar.now).format('MM-DD hh:mm:ss A')}}</td>
+          </tr>
+          <tr>
+            <td>Bar Date:</td>
+            <td>{{moment(bar.date).format('MM-DD hh:mm:ss A')}}</td>
+          </tr>
+          <tr>
+            <td>Bar Time:</td>
+            <td>{{bar.time}}</td>
+          </tr>
+          <tr>
+            <td>Open:</td>
+            <td>{{bar.open}}</td>
+          </tr>
+          <tr>
+            <td>High:</td>
+            <td>{{bar.high}}</td>
+          </tr>
+          <tr>
+            <td>Low:</td>
+            <td>{{bar.low}}</td>
+          </tr>
+
+          <tr>
+            <td>Close:</td>
+            <td>{{bar.close}}</td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4>10min</h4>
+      </td>
+      <td *ngFor="let bar of i10m">
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let bar of i10m">
+        <table class="bar-table">
+          <tr>
+            <td>Sample Date:</td>
+            <td>{{moment(bar.now).format('MM-DD hh:mm:ss A')}}</td>
+          </tr>
+          <tr>
+            <td>Bar Date:</td>
+            <td>{{moment(bar.date).format('MM-DD hh:mm:ss A')}}</td>
+          </tr>
+          <tr>
+            <td>Bar Time:</td>
+            <td>{{bar.time}}</td>
+          </tr>
+          <tr>
+            <td>Open:</td>
+            <td>{{bar.open}}</td>
+          </tr>
+          <tr>
+            <td>High:</td>
+            <td>{{bar.high}}</td>
+          </tr>
+          <tr>
+            <td>Low:</td>
+            <td>{{bar.low}}</td>
+          </tr>
+
+          <tr>
+            <td>Close:</td>
+            <td>{{bar.close}}</td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+    <tr>
+        <td>
+          <h4>5min</h4>
+        </td>
+        <td *ngFor="let bar of i5m">
+        </td>
+      </tr>
+    <tr>
+      <td *ngFor="let bar of i5m">
+        <table class="bar-table">
+          <tr>
+            <td>Sample Date:</td>
+            <td>{{moment(bar.now).format('MM-DD hh:mm:ss A')}}</td>
+          </tr>
+          <tr>
+            <td>Bar Date:</td>
+            <td>{{moment(bar.date).format('MM-DD hh:mm:ss A')}}</td>
+          </tr>
+          <tr>
+            <td>Bar Time:</td>
+            <td>{{bar.time}}</td>
+          </tr>
+          <tr>
+            <td>Open:</td>
+            <td>{{bar.open}}</td>
+          </tr>
+          <tr>
+            <td>High:</td>
+            <td>{{bar.high}}</td>
+          </tr>
+          <tr>
+            <td>Low:</td>
+            <td>{{bar.low}}</td>
+          </tr>
+
+          <tr>
+            <td>Close:</td>
+            <td>{{bar.close}}</td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+    <tr>
+        <td>
+          <h4>1min</h4>
+        </td>
+        <td *ngFor="let bar of i1m">
+        </td>
+      </tr>
+    <tr>
+      <td *ngFor="let bar of i1m">
+        <table class="bar-table">
+          <tr>
+            <td>Sample Date:</td>
+            <td>{{moment(bar.now).format('MM-DD hh:mm:ss A')}}</td>
+          </tr>
+          <tr>
+            <td>Bar Date:</td>
+            <td>{{moment(bar.date).format('MM-DD hh:mm:ss A')}}</td>
+          </tr>
+          <tr>
+            <td>Bar Time:</td>
+            <td>{{bar.time}}</td>
+          </tr>
+          <tr>
+            <td>Open:</td>
+            <td>{{bar.open}}</td>
+          </tr>
+          <tr>
+            <td>High:</td>
+            <td>{{bar.high}}</td>
+          </tr>
+          <tr>
+            <td>Low:</td>
+            <td>{{bar.low}}</td>
+          </tr>
+
+          <tr>
+            <td>Close:</td>
+            <td>{{bar.close}}</td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>

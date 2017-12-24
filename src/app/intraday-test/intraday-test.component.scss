@@ -1,0 +1,16 @@
+.outer-table {
+    margin: 20px;
+    td:nth-child(even) {
+        background: #4e4e4e;
+    }
+}
+
+.bar-table {
+    width: 200px;
+    td {
+        padding-left: 10px;
+    }
+    td:nth-child(even) {
+        background: transparent;
+    }
+}
