@@ -2,12 +2,16 @@
   <mat-sidenav #sidenav class="main-sidenav-drawer" [opened]="true" [mode]="'side'" [position]="'start'">
     <mat-nav-list>
       <a mat-list-item routerLink="./trade-list">
-        <mat-icon matListIcon>folder</mat-icon>
-        <h4 matLine>Alpha Long Results</h4>
+        <mat-icon matListIcon>shuffle</mat-icon>
+        <h4 matLine>AL Multi</h4>
+      </a>
+      <a mat-list-item routerLink="./trade-list-single">
+        <mat-icon matListIcon>timeline</mat-icon>
+        <h4 matLine>AL Single</h4>
       </a>
       <a mat-list-item routerLink="./intraday-test">
-          <mat-icon matListIcon>polymer</mat-icon>
-          <h4 matLine>Intraday Test</h4>
+        <mat-icon matListIcon>polymer</mat-icon>
+        <h4 matLine>Intraday Test</h4>
       </a>
     </mat-nav-list>
   </mat-sidenav>

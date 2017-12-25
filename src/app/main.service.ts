@@ -21,5 +21,11 @@ export class MainService {
         return resp.json();
       }, err => console.error(err));
   }
+  public getALSingleData() {
+    return this._http.get('https://joejordan-abcd.firebaseio.com/al-single/open.json')
+      .map(resp => {
+        return resp.json();
+      }, err => console.error(err));
+  }
 }
 

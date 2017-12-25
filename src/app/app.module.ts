@@ -10,6 +10,7 @@ import { TradeListModule } from './trade-list/trade-list.module';
 import { MainService } from './main.service';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { IntradayTestComponent } from './intraday-test/intraday-test.component';
+import { TradeListSingleModule } from './trade-list-single/trade-list-single.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { IntradayTestComponent } from './intraday-test/intraday-test.component';
     BrowserAnimationsModule,
     MaterialModule,
     TradeListModule,
+    TradeListSingleModule,
     HttpModule,
     FlexLayoutModule,
   ],
